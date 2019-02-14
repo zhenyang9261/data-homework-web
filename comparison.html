@@ -26,44 +26,61 @@
 <body>
 
     <nav class="navbar navbar-default" id="navbar-background">
-      <div class="container">
-        
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" id="site-logo" href="#">Latitude</a>
-        </div>
+        <div class="container">
           
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Plots <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Max Temperature</a></li>
-                <li><a href="#">Humidity</a></li>
-                <li><a href="#">Cloudiness</a></li>
-                <li><a href="#">Wind Speed</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Comparison</a></li>
-            <li><a href="#">Data</a></li>
-          </ul>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="site-logo" href="#">Latitude</a>
+          </div>
+            
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="temperature.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <div class="container">
 
-      <div class="row">
+      <div class="inner-container">  
+        
+        <div class="row">
+          <div class="col-md-12">
+            <p class="page-title">Comparison: Latitude vs X</p>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-md-12">
+            <hr class="hr-style">
+          </div>
+        </div>
 
-        <div class="inner-container">
-          <div class="col-sm-12 col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <blockquote>Click any plot to get in-depth analysis</blockquote>
+          </div>
+        </div>
+
+        <div class="row">
           
-          
+          <div class="col-sm-12 col-md-6"> <!-- Pic 1 begin -->
             <div class="row">
               <div class="col-md-12">
                 <h1 class="subtitle">vs Max Temperature</h1>
@@ -75,10 +92,9 @@
                 <img src="Resources/assets/images/Fig1.png" alt="latitude vs max temperature" class="img-rounded img-visual"/>
               </div>
             </div>
-          </div>
+          </div> <!-- Pic 1 end -->
         
-          <div class="col-sm-12 col-md-6">
-      
+          <div class="col-sm-12 col-md-6">  <!-- Pic 2 begin -->
             <div class="row">
               <div class="col-md-12">
                 <h1 class="subtitle">vs Humidity</h1>
@@ -90,13 +106,41 @@
                 <img src="Resources/assets/images/Fig2.png" alt="latitude vs humidity" class="img-rounded img-visual"/>
               </div>
             </div>
-          </div>
-        </div>
+          </div>  <!-- Pic 2 end -->
 
+          <div class="col-sm-12 col-md-6">  <!-- Pic 3 begin -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="subtitle">vs Cloudiness</h1>
+              </div>
+            </div>
 
+            
+            <div class="row">
+              <div class="col-md-12">
+                <img src="Resources/assets/images/Fig3.png" alt="latitude vs cloudiness" class="img-rounded img-visual"/>
+              </div>
+            </div>
+          </div>  <!-- Pic 3 end -->
+        
+          <div class="col-sm-12 col-md-6">  <!-- Pic 4 begin -->
+      
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="subtitle">vs Wind Speed</h1>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-md-12">
+                <img src="Resources/assets/images/Fig4.png" alt="latitude vs wind speed" class="img-rounded img-visual"/>
+              </div>
+            </div>
+          </div>  <!-- Pic 4 end -->
 
-      </div>
-    </div>
+        </div>  <!-- row end -->
+      </div> <!-- inner container  end -->
+    </div>  <!-- container end -->
 
 </body>
 
