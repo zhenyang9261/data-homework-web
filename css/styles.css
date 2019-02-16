@@ -1,0 +1,136 @@
+/*
+ * Weather Data Customized Styles
+ */
+
+body {
+  background-color: #f1f1f1;
+}
+
+#navbar-background {
+  background-color: white;
+}
+
+#site-logo {
+  font-size: 1.5em;
+  background-color: rgba(53, 149, 179, 0.747);
+  color: white;
+  font-weight: bold;
+}
+
+.inner-container {
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+}
+
+.page-title {
+  font-size: 2em;
+  color: rgba(53, 149, 179, 0.747);
+  font-weight: bold;
+  padding: 15px 0 0 15px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: rgba(53, 149, 179, 0.747);
+  font-weight: bold;
+  text-align: center;
+}
+
+.hr-style {
+  border-top: 1px solid #d9d9d9;
+}
+
+.img-in-text {
+  width: 40%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin: 10px;
+}
+
+.img-visual {
+  width: 95%;
+  height: auto;
+}
+
+.spacer-bottom {
+  padding-bottom: 25px;
+}
+
+.active-elem {
+  border: 1px solid rgb(103, 98, 167);
+  border-radius: 4px;
+}
+
+td, th {
+  text-align: center;
+}
+
+/* Zoom effect on visual figures */
+.zoom {
+  transition: transform .5s; /* Animation */
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.zoom .caption {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 8%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+  color: black;
+  font-size: 1.1em;
+}
+
+.zoom:hover .caption {
+  display: block;
+  filter: alpha(opacity=50);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+} 
+
+/* Customize navigation bar and image display in extra small screen */
+@media (max-width: 768px) {
+  .img-in-text {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px;
+  }
+
+  .navbar-header {
+    float: none;
+    background-color:rgba(53, 149, 179, 0.747);
+  }
+
+  .icon-bar {
+    color: rgba(250, 186, 67, 0.767) 
+  }
+
+  #site-logo {
+    font-size: 1.3em;
+    background-color: rgba(53, 149, 179, 0.747);
+    color: white;
+    font-weight: bold;
+  }
+}  
+
+
